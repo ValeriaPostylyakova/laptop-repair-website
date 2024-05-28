@@ -1,0 +1,238 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "Stem";
+  src: local("Stem Medium"), local("Stem-Medium"), url("Stem-Medium.woff2") format("woff2"), url("Stem-Medium.woff") format("woff"), url("Stem-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Stem";
+  src: local("Stem Bold"), local("Stem-Bold"), url("Stem-Bold.woff2") format("woff2"), url("Stem-Bold.woff") format("woff"), url("Stem-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/*--------------------*/
+body {
+  font-family: "Stem";
+  font-weight: 500;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  font-size: 18px;
+  width: 100%;
+  cursor: pointer;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  background-color: #FFF;
+}
+
+.container {
+  max-width: 1260px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.menu__list {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+.menu__list a {
+  color: rgba(26, 35, 110, 0.6980392157);
+  opacity: 0.7;
+  transition: all ease 0.5s 0s;
+}
+.menu__list a:hover {
+  color: #151b58;
+}
+.menu__list .menu__item-number p {
+  font-size: 13px;
+  color: rgba(26, 35, 110, 0.6980392157);
+  opacity: 0.7;
+  text-align: right;
+  line-height: 1.125rem;
+}
+.menu__list .menu__item-number a {
+  color: #1A236E;
+  transition: all ease 0.5s 0s;
+}
+.menu__list .menu__item-number:hover {
+  color: #140d4c;
+}
+.menu__list .menu__item-btn {
+  display: block;
+  text-align: center;
+  min-height: 44px;
+  min-width: 168px;
+  border-radius: 6px;
+  border: 1px solid rgba(0, 0, 0, 0.1019607843);
+  line-height: 2.75em;
+  font-size: 15px;
+  color: #1A236E;
+  transition: background ease 0.5s 0s;
+}
+.menu__list .menu__item-btn:hover {
+  background-color: #ecebfc;
+  color: #1A236E;
+  font-weight: 700;
+}
+
+.main {
+  flex: 1 1 auto;
+}
+
+.main__hero {
+  padding-top: 100px;
+  background: linear-gradient(rgba(26, 35, 110, 0.5019607843), rgba(26, 35, 110, 0.5019607843)), url(../img/hero-bg.png);
+  width: 100%;
+  height: 100vh;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #FFFFFF;
+}
+.hero__container h1 {
+  font-size: 64px;
+  text-align: center;
+  margin-bottom: 24px;
+}
+.hero__container p {
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+
+.hero__row-btn {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+#hero-btn {
+  display: block;
+  min-width: 207px;
+  min-height: 56px;
+  border-radius: 6px;
+  color: #1A236E;
+  line-height: 3.5em;
+  text-align: center;
+  font-size: 18px;
+}
+
+.hero__btn {
+  background: #FFFFFF;
+  transition: background ease 0.5s 0s;
+}
+.hero__btn:hover {
+  background-color: #FCDF00;
+}
+
+.hero__btn_yellow {
+  background: #FCDF00;
+  transition: background ease 0.5s 0s;
+}
+.hero__btn_yellow:hover {
+  background-color: #FFFFFF;
+}
+
+.hero__text {
+  text-align: center;
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.6980392157);
+}/*# sourceMappingURL=main.css.map */
