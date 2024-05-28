@@ -84,6 +84,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*--------------------*/
+.benefins {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 body {
   font-family: "Stem";
   font-weight: 500;
@@ -235,4 +241,58 @@ body {
   text-align: center;
   font-size: 15px;
   color: rgba(255, 255, 255, 0.6980392157);
+}
+
+.benefins {
+  margin-top: 120px;
+  margin-bottom: 120px;
+}
+
+.benefits__container {
+  max-width: 1100px;
+}
+.benefits__container h2 {
+  font-size: 60px;
+  font-weight: 700;
+  text-align: center;
+  color: #1A236E;
+  margin-bottom: 24px;
+}
+.benefits__container p {
+  font-weight: 500;
+  font-size: 24px;
+  text-align: center;
+  color: rgba(26, 35, 110, 0.6980392157);
+  margin-bottom: 64px;
+}
+
+.benefits__card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+.benefits__card .card__row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 0 1 25%;
+  flex-wrap: wrap;
+}
+.benefits__card .card__row img {
+  width: 200px;
+  height: 200px;
+  margin-bottom: 27px;
+}
+.benefits__card .card__row h3 {
+  color: #1A236E;
+  font-size: 28px;
+  margin-bottom: 16px;
+  text-align: center;
+}
+.benefits__card .card__row p {
+  font-weight: 700;
+  font-size: 24px;
+  text-align: center;
+  color: rgba(26, 35, 110, 0.4);
 }/*# sourceMappingURL=main.css.map */
