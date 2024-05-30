@@ -1,13 +1,13 @@
 @charset "UTF-8";
 @font-face {
   font-family: "Stem";
-  src: url("fonts/Stem-Bold.woff2") format("woff2"), url("fonts/Stem-Bold.woff") format("woff"), url("fonts/Stem-Bold.ttf") format("truetype");
+  src: url("../fonts/Stem-Bold.woff2") format("woff2"), url("../fonts/Stem-Bold.woff") format("woff"), url("../fonts/Stem-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
   font-family: "Stem";
-  src: url("fonts/Stem-Medium.woff2") format("woff2"), url("fonts/Stem-Medium.woff") format("woff"), url("fonts/Stem-Medium.ttf") format("truetype");
+  src: url("../fonts/Stem-Medium.woff2") format("woff2"), url("../fonts/Stem-Medium.woff") format("woff"), url("../fonts/Stem-Medium.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
 }
