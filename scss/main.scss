@@ -19,6 +19,9 @@
 @import "./nullstyle";
 @import "./footer";
 
+$pt: 120px;
+$pb: 120px;
+
 %flex2 {
     display: flex;
     align-items: center;
@@ -368,6 +371,7 @@ body {
     text-align: center;
 
     img {
+        object-fit: cover;
         margin-bottom: 24px;
     }
     .card__name {
@@ -465,10 +469,45 @@ body {
     line-height: 44px;
     text-align: center;
     font-size: 15px;
+    transition: all ease 0.5s;
     color: #1A236E;
+
+    &:hover {
+        background-color: #fdea57;
+        border: 1px solid #1A236E;
+    }
 }
    
- 
+.stamps {
+    padding: 120px 10px;
+.team__title {
+    text-align: center;
+    }
+    .stamps__img-container {
+        margin-top: 64px;
+    }
+}
+
+.img-container {
+    display: flex;
+    gap: 30px;
+    img {
+        width: 255px / 1110px * 100%;
+    }
+}
+
+.form2-container {
+    input {
+        gap: 10px;
+    }
+    #hero-btn {
+        background-color: #FF3A23;
+        color: #FFFFFF;
+        &:hover {
+            background-color: #f95240;
+        }
+    }
+}
 
 
 

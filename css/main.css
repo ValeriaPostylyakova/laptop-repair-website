@@ -483,6 +483,8 @@ body {
   text-align: center;
 }
 .team__row img {
+  -o-object-fit: cover;
+     object-fit: cover;
   margin-bottom: 24px;
 }
 .team__row .card__name {
@@ -568,5 +570,39 @@ body {
   line-height: 44px;
   text-align: center;
   font-size: 15px;
+  transition: all ease 0.5s;
   color: #1A236E;
+}
+.card__btn:hover {
+  background-color: #fdea57;
+  border: 1px solid #1A236E;
+}
+
+.stamps {
+  padding: 120px 10px;
+}
+.stamps .team__title {
+  text-align: center;
+}
+.stamps .stamps__img-container {
+  margin-top: 64px;
+}
+
+.img-container {
+  display: flex;
+  gap: 30px;
+}
+.img-container img {
+  width: 22.972972973%;
+}
+
+.form2-container input {
+  gap: 10px;
+}
+.form2-container #hero-btn {
+  background-color: #FF3A23;
+  color: #FFFFFF;
+}
+.form2-container #hero-btn:hover {
+  background-color: #f95240;
 }/*# sourceMappingURL=main.css.map */
