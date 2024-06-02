@@ -128,6 +128,7 @@ body {
   cursor: pointer;
   padding-top: 16px;
   padding-bottom: 16px;
+  border-bottom: 1px solid #dfdbdb;
   background-color: #ffffff;
   z-index: 50;
 }
@@ -191,6 +192,8 @@ body {
 .main__hero {
   padding-top: 100px;
   background: linear-gradient(rgba(26, 35, 110, 0.5019607843), rgba(26, 35, 110, 0.5019607843)), url(../img/hero-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
   width: 100%;
   height: 100vh;
 }
@@ -264,6 +267,8 @@ body {
 .benefits__container {
   max-width: 1100px;
   margin: 0 auto;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 .benefits__container h2 {
   font-size: 60px;
@@ -427,7 +432,7 @@ body {
   min-width: 207px;
   min-height: 56px;
   border-radius: 6px;
-  color: rgb(162, 162, 162);
+  color: rgb(0, 0, 0);
   line-height: 3.5em;
   text-align: center;
   font-size: 18px;
@@ -452,6 +457,7 @@ body {
 
 .team-container {
   max-width: 1100px;
+  padding-left: 10px;
   margin: 0 auto;
 }
 
@@ -483,8 +489,8 @@ body {
   text-align: center;
 }
 .team__row img {
-  -o-object-fit: cover;
-     object-fit: cover;
+  width: 100%;
+  padding-right: 10px;
   margin-bottom: 24px;
 }
 .team__row .card__name {
@@ -605,4 +611,25 @@ body {
 }
 .form2-container #hero-btn:hover {
   background-color: #f95240;
+}
+
+.form__row_1 {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.images {
+  padding: 80px 10px;
+}
+.images .images__row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 30px;
+}
+.images img {
+  width: 100%;
+}
+.images .images__img1 {
+  grid-row: 1/3;
 }/*# sourceMappingURL=main.css.map */
