@@ -26,7 +26,6 @@ html(lang="ru")
                                 a.menu__item-btn(href="#") Заказать звонок
             main.main 
                 .main__hero.hero
-
                     .hero__container
                         h1 Ремонт ноутбуков <br> в вашем городе
                         p Ремонт ноутбуков и другой техники в вашем городе по самым низким ценам
@@ -114,11 +113,11 @@ html(lang="ru")
                             .team__card.card 
                                 img(src="./img/team__card2.png", alt="")
                                 p.card__name Имя Фамилия
-                                p.card__info Ремонтирую ноутбуки
+                                p.card__info Устанавливаю ПО
                             .team__card.card 
                                 img(src="./img/team__card3.png", alt="")
                                 p.card__name Имя Фамилия
-                                p.card__info Ремонтирую ноутбуки
+                                p.card__info Чиню приставки
                 section.services
                     .services__container.servisec-container 
                         h2.team__title Пакеты услуг
@@ -169,9 +168,9 @@ html(lang="ru")
                         h2 Свяжитесь с нами
                         p Оставьте заявку на банковскую гарантию
                         form.form__row_1(action="" method="post")
-                            input(type="text", name="phone", placeholder="Ваше имя")
+                            input(type="text", name="name", placeholder="Ваше имя")
                             input(type="text", id="phone", name="phone", placeholder="+7 (000) 000-0000") 
-                            input(type="text", name="phone", placeholder="E-mail")  
+                            input(type="text", name="email", placeholder="E-mail")  
                             button.hero__btn_yellow(type="submit", id="hero-btn") Оставить заявку
                         p.form__info Оставляя заявку, вы соглашаетесь на обработку персональных данных и с условиями бронирования счёта 
                 section.images.team-container
@@ -179,6 +178,27 @@ html(lang="ru")
                         img.images__img1(src="./img/images-img1.png", alt="")
                         img(src="./img/images-img2.png", alt="")
                         img(src="./img/images-img3.png", alt="")
+                section.form3.main__hero
+                    .form3__container 
+                        .form3__row
+                            h2 Закажите ремонт техники
+                            label.form3__label-form1(for="cd") Заполните форму и закажите полис
+                            input.form3__input1#cd(type="text" name="name", placeholder="Ваше имя") 
+                            input.form3__input1(type="text", id="phone", name="phone", placeholder="+7 (000) 000-0000") 
+                            input.form3__input1(type="text", name="email", placeholder="E-mail")
+                        .form3__row_2
+                            p Какой полис вас интересует
+                            .form3__btn-radio 
+                                input#radio(type="radio", name="radio", checked)
+                                label(for="radio") КАСКО
+                            .form3__btn-radio 
+                                input#radio(type="radio", name="radio")
+                                label(for="radio") ОСАГО
+                            .form3__btn-radio 
+                                input#radio(type="radio", name="radio")
+                                label(for="radio") Страхование жизни
+                            a.hero__btn_yellow(href="#", id="hero-btn") Заказать полис
+                            p.form__text Оставляя заявку, вы соглашаетесь на обработку персональных данных и с условиями бронирования счёта
 
                                
 
