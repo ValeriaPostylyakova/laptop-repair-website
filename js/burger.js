@@ -9,7 +9,7 @@ function burgerHandler(event) {
     event.preventDefault();
     popup.classList.toggle('open');
     burger.classList.toggle('active');
-    body.classList.toggle('noscroll');
+    body.classList.toggle('noscroll')
     rendlerPopup();
 }
 

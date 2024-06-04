@@ -144,10 +144,6 @@ body {
   display: none;
 }
 
-.header__burger-popup {
-  display: none;
-}
-
 .menu__list {
   margin-top: 25px;
   display: flex;
@@ -793,6 +789,7 @@ li a {
     flex-direction: column;
     align-items: center;
     padding: 50px 0;
+    overflow: auto;
   }
   .menu__list a {
     display: flex;
@@ -836,10 +833,13 @@ li a {
     width: 100%;
     height: 100%;
     background-color: #fffcfc;
-    z-index: 50;
+    z-index: 100;
     transition: 0.3s;
   }
   .header__burger-popup.open {
     left: 0;
+  }
+  body.noscroll {
+    overflow: auto;
   }
 }/*# sourceMappingURL=main.css.map */
