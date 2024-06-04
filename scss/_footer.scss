@@ -1,0 +1,36 @@
+.footer {
+    background-color: #FCDF00;
+    font-size: 18px;
+    color: #1A236E99;
+}
+li {
+    margin-bottom: 16px;
+    &:last-child {
+        margin-bottom: 0;
+    }
+    a {
+        color: #1A236E;
+    }
+}
+
+.footer__container {
+    max-width: 1160px;
+    margin: 0 auto;
+    padding: 80px 10px;
+}
+
+.footer__row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .footer__title {
+        font-weight: 700;
+    }
+
+    .footer__social {
+        display: flex;
+        gap: 10px;
+    }
+}
+

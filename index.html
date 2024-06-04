@@ -9,10 +9,13 @@
   <body>
     <div class="wrapper"> 
       <header class="header">
-        <div class="header__container container"> 
+        <div class="header__container container">
+          <div class="header__burger burger" id="burger">
+            <div class="burger__field"><span class="burger__bar"></span><span class="burger__bar"></span><span class="burger__bar"></span></div>
+          </div>
           <div class="header__logo"> <img src="./img/header__logo.png" alt="logo"></div>
           <nav class="header__menu menu"> 
-            <ul class="menu__list"> 
+            <ul class="menu__list" id="menu">
               <li><a href="#">Преимущества</a></li>
               <li><a href="#">Команда</a></li>
               <li><a href="#">Услуги</a></li>
@@ -22,6 +25,7 @@
               <li><a class="menu__item-btn" href="#">Заказать звонок</a></li>
             </ul>
           </nav>
+          <div class="header__burger-popup" id="popup"></div>
         </div>
       </header>
       <main class="main"> 
@@ -225,10 +229,58 @@
             </div>
           </div>
         </section>
+        <section class="contacts">
+          <div class="contacts__container">
+            <div class="contacts__map-wrapper"> 
+              <iframe class="contacts__map" src="https://yandex.ru/map-widget/v1/?um=constructor%3A467d4e7eaeaa3f216529bcc8f69c5e2ac6ceed3e99434b7dc99fff86d86d1e83&amp;amp;source=constructor"></iframe>
+            </div>
+            <div class="contacts__info info">
+              <ul> 
+                <li class="info__row"> 
+                  <div class="info__title">Контакты</div>
+                </li>
+                <li class="info__row"> 
+                  <div class="info__number">+7 987 654-32-10</div>
+                  <div class="info__email">info@constructor.ru</div>
+                </li>
+                <li class="info__row"> 
+                  <div class="info__number">г. Москва, метро “Китай город”,</div>
+                  <div class="info__email">ул. Яузская, дом 15/11</div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <footer class="footer">
+          <div class="footer__container"> 
+            <div class="footer__row"> 
+              <ul class="footer__title">
+                <li>© 2020 Ремонт техники</li>
+              </ul>
+              <ul class="footer__info"> 
+                <li> <a href="#">О компании</a></li>
+                <li> <a href="#">Новости</a></li>
+                <li><a href="#">Помощь</a></li>
+                <li><a href="#">Контакты</a></li>
+              </ul>
+              <ul class="footer__contacts"> 
+                <li> <a href="+74951234567">+7 495 123-45-67</a></li>
+                <li> <a href="mailto:name@company.ru">name@company.ru</a></li>
+              </ul>
+              <ul class="footer__social"> 
+                <li> <a href="#"><img src="./img/icon1.png" alt="icon"></a></li>
+                <li> <a href="#"><img src="./img/icon2.png" alt="icon"></a></li>
+                <li> <a href="#"><img src="./img/icon3.png" alt="icon"></a></li>
+                <li> <a href="#"><img src="./img/icon4.png" alt="icon"></a></li>
+              </ul>
+            </div>
+          </div>
+        </footer>
       </main>
     </div>
+    <script src="./js/slider.js"></script>
     <script src="https://unpkg.com/imask"></script>
     <script src="./js/form.js"></script>
-    <script src="./js/slider.js"></script>
+    <script src="./js/burger.js"> </script>
   </body>
 </html>

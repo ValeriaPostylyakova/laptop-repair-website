@@ -20,14 +20,23 @@
 .container {
     max-width: 1260px;
     margin: 0 auto;
-    padding: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .header__container {
     @extend %flex;
 }
 
+.header__burger {
+    display: none;
+}
+.header__burger-popup {
+    display: none;
+}
+
 .menu__list {
+    margin-top: 25px;
     display: flex;
     align-items: center;
     gap: 24px;
@@ -61,6 +70,7 @@
     }
 
     .menu__item-btn {
+        margin-bottom: 10px;
         display: block;
         text-align: center;
         min-height: 44px;
@@ -79,5 +89,6 @@
         }
     }
 }
+
 
 

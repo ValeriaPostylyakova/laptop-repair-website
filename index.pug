@@ -8,11 +8,16 @@ html(lang="ru")
     body
         .wrapper 
             header.header
-                .header__container.container 
+                .header__container.container
+                    .header__burger.burger(id="burger")
+                        .burger__field
+                            span.burger__bar
+                            span.burger__bar
+                            span.burger__bar
                     .header__logo 
                         img(src="./img/header__logo.png", alt="logo")
                     nav.header__menu.menu 
-                        ul.menu__list 
+                        ul.menu__list(id="menu")
                             li
                                 a(href="#") Преимущества
                             li
@@ -24,6 +29,7 @@ html(lang="ru")
                                 a(href="+74951234567") +7 495 123-45-67
                             li
                                 a.menu__item-btn(href="#") Заказать звонок
+                    .header__burger-popup(id="popup")
             main.main 
                 .main__hero.hero
                     .hero__container
@@ -199,16 +205,55 @@ html(lang="ru")
                                 label(for="radio") Страхование жизни
                             a.hero__btn_yellow(href="#", id="hero-btn") Заказать полис
                             p.form__text Оставляя заявку, вы соглашаетесь на обработку персональных данных и с условиями бронирования счёта
+                section.contacts
+                    .contacts__container
+                        .contacts__map-wrapper 
+                            iframe.contacts__map(src="https://yandex.ru/map-widget/v1/?um=constructor%3A467d4e7eaeaa3f216529bcc8f69c5e2ac6ceed3e99434b7dc99fff86d86d1e83&amp;source=constructor")
+                        .contacts__info.info
+                            ul 
+                                li.info__row 
+                                    .info__title Контакты
+                                li.info__row 
+                                    .info__number +7 987 654-32-10
+                                    .info__email info@constructor.ru
+                                li.info__row 
+                                    .info__number г. Москва, метро “Китай город”,
+                                    .info__email ул. Яузская, дом 15/11
+                footer.footer
+                    .footer__container 
+                        .footer__row 
+                            ul.footer__title
+                                li © 2020 Ремонт техники
+                            ul.footer__info 
+                                li 
+                                    a(href="#") О компании
+                                li 
+                                    a(href="#") Новости
+                                li
+                                    a(href="#") Помощь
+                                li
+                                    a(href="#") Контакты
+                            ul.footer__contacts 
+                                li 
+                                    a(href="+74951234567") +7 495 123-45-67
+                                li 
+                                    a(href="mailto:name@company.ru") name@company.ru
+                            ul.footer__social 
+                                li 
+                                    a(href="#")
+                                        img(src="./img/icon1.png", alt="icon")
+                                li 
+                                    a(href="#")
+                                        img(src="./img/icon2.png", alt="icon")
+                                li 
+                                    a(href="#")
+                                        img(src="./img/icon3.png", alt="icon") 
+                                li 
+                                    a(href="#")
+                                        img(src="./img/icon4.png", alt="icon") 
 
-                               
-
-
-
-
-                
-
-
-
+                                
+        script(src="./js/slider.js")
         script(src="https://unpkg.com/imask")
         script(src="./js/form.js")
-        script(src="./js/slider.js")
+        script(src="./js/burger.js") 
