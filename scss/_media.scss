@@ -1,7 +1,14 @@
-@media (max-width: 960px) {
-    .header__container {
-        margin: auto 30px;
+@media (max-width: 1150px) {
+    .slider__container {
+        max-width: 600px;
+        p {
+            font-size: 20px;
+        }
     }
+    
+}
+
+@media (max-width: 960px) {
     .menu {
         display: none;
     }
@@ -66,4 +73,120 @@
     body.noscroll {
         overflow: auto;
     }
+    .slider__container {
+        p {
+            font-size: 18px;
+        }
+    }
+    .images {
+        .images__row {
+            grid-gap: 20px;
+        }
+    }
+    .contacts__info {
+        .info__row {
+            margin-left: 20px;
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    .form__row_1 {
+        display: flex;
+        flex-direction: column;
+        input, .hero__btn_yellow {
+            width: 400px;
+        }
+    }
+    .contacts__map-wrapper {
+        width: 500px;
+    }
+    .footer__container {
+        padding: 40px 10px;
+    }
+    .benefits__container {
+        overflow-x: auto;
+        scrollbar-width: none;
+    h2 {
+        font-size: 50px;
+    }
+    p {
+        font-size: 20px;
+    }
+}
+    .team__card {
+        img {
+            width: 90%;
+            overflow-x: auto;
+            scrollbar-width: none;
+        }
+    }
+    .team__title {
+        font-size: 55px;
+    }
+}
+
+@media (max-width: 836px) {
+    .services__row {
+        overflow-x: auto;
+        scrollbar-width: none;
+    }
+    .card__container {
+        width: 350px;
+    }
+    .stamps__img-container {
+        gap: 10px;
+        margin: 0 auto;
+        overflow-x: auto;
+        scrollbar-width: none;
+    }
+}
+
+@media (max-width: 793px) {
+    .slider__container {
+        p {
+            font-size: 14px;
+        }
+    }
+    .footer__title {
+        display: none;
+    }
+}
+
+@media (max-width: 620px) {
+    .hero__container {
+        h1 {
+            font-size: 50px;
+        }
+        p {
+            font-size: 20px;
+        }
+        .hero__text {
+            font-size: 17px;
+        }
+    }
+    .slider__btn-next, .slider__btn-prev {
+        width: 50px;
+        height: 50px;
+    }
+    .team__text {
+        text-align: center;
+        font-size: 23px;
+    }
+    .stamps {
+        .team__title {
+            font-size: 50px;
+        }
+        .form__info {
+            font-size: 12px;
+        }
+    }
+    .team__container {
+        overflow-x: auto;
+        scrollbar-width: none;
+    }
+    .team__row {
+        width: 1000px;
+    }
+
 }
