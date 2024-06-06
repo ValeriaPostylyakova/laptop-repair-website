@@ -923,6 +923,28 @@ li a {
   .hero__container .hero__text {
     font-size: 17px;
   }
+  .benefits__container h2 {
+    font-size: 45px;
+  }
+  .benefits__container p {
+    font-size: 20px;
+  }
+  .benefits__container .benefits__card .card__row img {
+    width: 150px;
+    height: 150px;
+  }
+  .benefits__container .benefits__card .card__row h3 {
+    font-size: 25px;
+  }
+  .benefits__container .benefits__card .card__row p {
+    font-size: 22px;
+  }
+  h2 {
+    font-size: 25px;
+  }
+  p {
+    font-size: 22px;
+  }
   .slider__btn-next, .slider__btn-prev {
     width: 50px;
     height: 50px;
@@ -943,5 +965,117 @@ li a {
   }
   .team__row {
     width: 1000px;
+  }
+  .images .images__row {
+    grid-gap: 10px;
+  }
+}
+@media (max-width: 550px) {
+  .footer__row {
+    flex-direction: column;
+  }
+  .footer__row .footer__social {
+    margin-top: 20px;
+  }
+  .contacts__info {
+    display: none;
+  }
+  .contacts__map-wrapper {
+    width: 100%;
+  }
+  .footer__info {
+    margin-bottom: 10px;
+  }
+  .images {
+    padding: 50px 10px;
+  }
+}
+@media (max-width: 440px) {
+  .hero__container {
+    padding: 0 5px;
+  }
+  .hero__container h1 {
+    font-size: 45px;
+  }
+  .hero__container p {
+    font-size: 20px;
+  }
+  .hero__container .hero__text {
+    font-size: 15px;
+  }
+  .hero__row-btn {
+    flex-direction: column;
+  }
+  #hero-btn {
+    width: 300px;
+  }
+  .form__container h2 {
+    font-size: 45px;
+  }
+  .form__container p {
+    font-size: 17px;
+  }
+  .form__row_1 input {
+    width: 300px;
+  }
+}
+@media (max-width: 320px) {
+  .hero__container {
+    padding: 0 5px;
+  }
+  .hero__container h1 {
+    font-size: 40px;
+  }
+  .hero__container p {
+    font-size: 20px;
+  }
+  .hero__container .hero__text {
+    font-size: 15px;
+  }
+  .benefits__container h2 {
+    font-size: 40px;
+  }
+  .benefits__container p {
+    font-size: 18px;
+  }
+  .benefits__card .card__row img {
+    width: 120px;
+    height: 120px;
+  }
+  .benefits__card .card__row h3 {
+    font-size: 20px;
+  }
+  .benefits__card .card__row p {
+    font-size: 19px;
+  }
+  .form__container h2 {
+    font-size: 40px;
+  }
+  .form__container p {
+    font-size: 15px;
+  }
+  .team__text-container {
+    text-align: center;
+  }
+  .team__text-container .team__title {
+    font-size: 45px;
+  }
+  .team__text-container .team__subtitle {
+    font-size: 25px;
+  }
+  .team__text-container .team__text {
+    font-size: 19px;
+  }
+  .services__container .team__title {
+    font-size: 45px;
+  }
+  .services__container .team__text {
+    font-size: 25px;
+  }
+  .stamps .team__title {
+    font-size: 45px;
+  }
+  .form3__row h2 {
+    font-size: 37px;
   }
 }/*# sourceMappingURL=main.css.map */
